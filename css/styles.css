@@ -58,6 +58,8 @@ body {
 }
 
 .index-title {
+  padding-left: 35px;
+  padding-right: 35px;
   padding-top: 50px;
   padding-bottom: 20px;
   color: #eeeff1;
@@ -76,6 +78,7 @@ body {
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 50px;
+
   text-align: center;
 }
 
@@ -373,6 +376,34 @@ input {
     padding: 0;
     margin: 0;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .featured-products img {
+    width: 300px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1000px) {
+  .featured-products img {
+    width: 250px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .featured-products img {
+    width: 450px;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .featured-products img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .featured-products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
