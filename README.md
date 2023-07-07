@@ -1,6 +1,7 @@
-# joaquin-zamora-55445
+# Joaquin-zamora-55445
 # Pre-entrega2-Zamora
 Link repositorio:[link](https://github.com/joacode35/joaquin-zamora-55445.git)
+Link deployment: [link](https://joacode35.github.io/joaquin-zamora-55445/)
 
 **Codigo trabajado:**
 - navbar (bootstrap flex).
