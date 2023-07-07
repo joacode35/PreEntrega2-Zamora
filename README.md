@@ -1,6 +1,6 @@
 # joaquin-zamora-55445
 # Pre-entrega2-Zamora
-** Codigo trabajado: **
+**Codigo trabajado:**
 - navbar (bootstrap flex).
 - header imagen (grid tradicional).
 - search nav y search button (bootstrap).
