@@ -1,0 +1,24 @@
+.box {
+  background-color: $mainColor;
+  padding: 4px 0;
+  text-align: center;
+  color: $whiteC;
+}
+
+.navegacion {
+  background-color: $blackC;
+  img {
+    width: 250px;
+    a {
+      font-size: $textMd;
+      a:hover {
+        color: $tertiaryColor;
+      }
+    }
+  }
+}
+
+.cart-shop {
+  font-size: $textLg;
+  color: $mainColor;
+}

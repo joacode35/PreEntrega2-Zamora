@@ -1,0 +1,108 @@
+/* Breakpoint nav-bar*/
+
+.cart-shop {
+  @media (min-width: 450px) and (max-width: 991px) {
+    font-size: 2.5em;
+  }
+  @media (min-width: 320px) and (max-width: 450px) {
+    font-size: 2.3em;
+  }
+}
+
+.navegacion img {
+  @media (min-width: 450px) and (max-width: 992px) {
+    width: 200px;
+  }
+  @media (min-width: 320px) and (max-width: 450px) {
+    width: 150px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .padding-image {
+    padding-left: 10px;
+  }
+}
+
+/* Breakpoint index*/
+
+.header-index {
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.featured-prodcuts img {
+  @media (min-width: 1001px) and (max-width: 1200px) {
+    width: 300px;
+  }
+  @media (min-width: 767px) and (max-width: 1000px) {
+    width: 250px;
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    width: 450px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .featured-products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Breakpoint products*/
+
+@media (min-width: 320px) and (max-width: 415px) {
+  .search-box input {
+    width: 215px;
+  }
+}
+
+.container .heading {
+  @include responsive(md) {
+    font-size: 2.5em;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+/* Breakpoint footer image*/
+
+@media (width > 1200px) {
+  footer img {
+    width: 55%;
+  }
+}
+
+footer img {
+  @include responsive(lg) {
+    width: 200px;
+  }
+  @include responsive(md) {
+    width: 200px;
+  }
+  @include responsive(sm) {
+    width: 40%;
+    padding-bottom: 30px;
+  }
+  @include responsive(sm) {
+    padding-bottom: 30px;
+  }
+  @include responsive(sm) {
+    width: 50%;
+  }
+}

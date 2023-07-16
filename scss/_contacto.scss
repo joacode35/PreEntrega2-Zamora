@@ -1,0 +1,45 @@
+.contact-title {
+  padding: 25px 30px;
+  margin: 10px 0;
+  color: $whiteC;
+  background-color: $tertiaryColor;
+  text-align: center;
+}
+
+.contact-info {
+  background-color: $whiteC;
+  padding: 25px 30px;
+  margin: 10px 0;
+}
+
+.contact-info2 {
+  background-color: $whiteC;
+  padding: 25px 30px;
+  margin: 10px 0;
+}
+
+.form {
+  width: 50%;
+  background-color: $tertiaryColor;
+  padding: 30px;
+  border-radius: 6px;
+  margin-left: 30px;
+  label {
+    display: block;
+  }
+  input {
+    margin-bottom: 5px;
+  }
+}
+
+.simbols {
+  div {
+    padding: 15px;
+    margin-left: 30px;
+  }
+  img {
+    width: 100px;
+    padding: 15px;
+    margin-left: -15px;
+  }
+}

@@ -1,0 +1,24 @@
+.service-title {
+  padding: 25px 30px;
+  margin: 10px 0;
+  color: $whiteC;
+  background-color: $tertiaryColor;
+  text-align: center;
+}
+
+.service-image img {
+  width: 100%;
+}
+
+.service-list {
+  img {
+    width: 250px;
+    padding: 25px 30px;
+    margin: 10px 0;
+  }
+  p {
+    background-color: $whiteC;
+    padding: 25px 30px;
+    margin: 10px 0;
+  }
+}

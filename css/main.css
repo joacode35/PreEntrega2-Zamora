@@ -1,32 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
-/*Font*/
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   text-decoration: none;
   list-style: none;
   transition: 0.2s linear;
 }
-/*Ends universal settings*/
 
+/*Ends universal settings*/
 body {
   background-color: #39456c;
   background-attachment: fixed;
 }
-/*Ends background*/
 
 .box {
   background-color: #00ab5b;
   padding: 4px 0;
   text-align: center;
   color: #eef1f8;
-  font-size: 1em;
 }
-
-/*Start index*/
 
 .navegacion {
   background-color: #000000;
@@ -34,11 +26,10 @@ body {
 .navegacion img {
   width: 250px;
 }
-.navegacion a {
+.navegacion img a {
   font-size: 1em;
-  color: #eeeff1;
 }
-.navegacion a:hover {
+.navegacion img a a:hover {
   color: #adbcdf;
 }
 
@@ -62,7 +53,7 @@ body {
   padding-right: 35px;
   padding-top: 50px;
   padding-bottom: 20px;
-  color: #eeeff1;
+  color: #adbcdf;
   background-color: #000000;
   text-align: center;
 }
@@ -73,7 +64,7 @@ body {
 .index-info {
   background-color: #000000;
   border-bottom: solid #00ab5b;
-  color: #eeeff1;
+  color: #adbcdf;
   letter-spacing: 0.05em;
   font-size: 1em;
   padding-top: 10px;
@@ -94,7 +85,6 @@ body {
 
 .featured-products {
   padding-bottom: 50px;
-  /*Flex*/
   display: flex;
   justify-content: center;
 }
@@ -104,10 +94,6 @@ body {
   padding: 20px 10px;
   width: 325px;
 }
-
-/*Ends index*/
-
-/*Start productos*/
 
 .search-box {
   width: 100%;
@@ -128,11 +114,10 @@ input {
 }
 
 .container {
-  background: #39456c;
+  background-color: #39456c;
   padding: 15px 9%;
   padding-bottom: 100px;
 }
-
 .container .heading {
   text-align: center;
   padding-bottom: 15px;
@@ -146,7 +131,6 @@ input {
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 15px;
 }
-
 .container .box-container .box {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -154,11 +138,9 @@ input {
   text-align: center;
   padding: 30px 20px;
 }
-
 .container .box-container .box img {
   height: 14rem;
 }
-
 .container .box-container .box h3 {
   color: #444;
   font-size: 22px;
@@ -167,13 +149,11 @@ input {
 .container .box-container .box h5 {
   color: #333;
 }
-
 .container .box-container .box p {
   color: #777;
   font-size: 15px;
   line-height: 1.8;
 }
-
 .container .box-container .box .btn {
   margin-top: 10px;
   display: inline-block;
@@ -183,24 +163,18 @@ input {
   border-radius: 5px;
   padding: 8px 25px;
 }
-
 .container .box-container .box .btn:hover {
   letter-spacing: 1px;
 }
-
-.container .box-container .box:hover {
+.container .box-container .box .box:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.03);
 }
 
-/*Ends productos*/
-
-/*Start servicios*/
-
 .service-title {
   padding: 25px 30px;
   margin: 10px 0;
-  color: #eeeff1;
+  color: #eef1f8;
   background-color: #adbcdf;
   text-align: center;
 }
@@ -220,14 +194,10 @@ input {
   margin: 10px 0;
 }
 
-/*Ends servicios*/
-
-/*Start nosotros*/
-
-.us-title {
+us-title {
   padding: 25px 30px;
   margin: 10px 0;
-  color: #eeeff1;
+  color: #eef1f8;
   background-color: #adbcdf;
   text-align: center;
 }
@@ -254,14 +224,10 @@ input {
   margin: 10px 0;
 }
 
-/*Ends nosotros*/
-
-/*Start contacto*/
-
 .contact-title {
   padding: 25px 30px;
   margin: 10px 0;
-  color: #eeeff1;
+  color: #eef1f8;
   background-color: #adbcdf;
   text-align: center;
 }
@@ -302,10 +268,6 @@ input {
   margin-left: -15px;
 }
 
-/*Ends contacto*/
-
-/*Start footer*/
-
 .footer-title {
   color: #00ab5b;
 }
@@ -313,11 +275,10 @@ input {
 .links a {
   text-decoration: none;
   font-size: 1.5em;
-  color: #eeeff1;
+  color: #eef1f8;
 }
 
 /*Ends footer*/
-
 .assistant {
   position: fixed;
   font-size: 4em;
@@ -326,10 +287,7 @@ input {
   color: #00ab5b;
 }
 
-/*Ends fixed position icon*/
-
-/* Breackpoint navbar*/
-
+/* Breakpoint nav-bar*/
 @media (min-width: 450px) and (max-width: 991px) {
   .cart-shop {
     font-size: 2.5em;
@@ -351,45 +309,39 @@ input {
     width: 150px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 991px) {
   .padding-image {
     padding-left: 10px;
   }
 }
-
-/* Breackpoint index*/
-
+/* Breakpoint index*/
 @media (max-width: 768px) {
   .header-index {
     padding: 30px;
   }
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
   .header-index {
     padding: 0;
     margin: 0;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media (min-width: 1001px) and (max-width: 1200px) {
-  .featured-products img {
+  .featured-prodcuts img {
     width: 300px;
   }
 }
 @media (min-width: 767px) and (max-width: 1000px) {
-  .featured-products img {
+  .featured-prodcuts img {
     width: 250px;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
-  .featured-products img {
+  .featured-prodcuts img {
     width: 450px;
-  }
-}
-@media (min-width: 320px) and (max-width: 500px) {
-  .featured-products img {
-    width: 300px;
   }
 }
 
@@ -400,15 +352,12 @@ input {
     align-items: center;
   }
 }
-
-/* Breackpoint products*/
-
+/* Breakpoint products*/
 @media (min-width: 320px) and (max-width: 415px) {
   .search-box input {
     width: 215px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container .heading {
     font-size: 2.5em;
@@ -419,81 +368,43 @@ input {
     font-size: 2em;
   }
 }
+
 @media (max-width: 768px) {
   .container {
     padding: 30px;
   }
 }
-
-/* Breackpoint footer image*/
-
+/* Breakpoint footer image*/
 @media (width > 1200px) {
   footer img {
     width: 55%;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   footer img {
     width: 200px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   footer img {
     width: 200px;
   }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   footer img {
     width: 40%;
     padding-bottom: 30px;
   }
 }
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   footer img {
     padding-bottom: 30px;
   }
 }
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   footer img {
     width: 50%;
   }
 }
 
-/* Breackpoint footer info*/
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .ayuda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .footer-title {
-    text-align: center;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .footer-info {
-    text-align: center;
-  }
-}
-@media (min-width: 992px) and (max-width: 1004px) {
-  .links {
-    font-size: 0.8em;
-  }
-}
+/*# sourceMappingURL=main.css.map */
