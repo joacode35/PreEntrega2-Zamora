@@ -61,7 +61,7 @@ body {
   padding-right: 35px;
   padding-top: 6%;
   padding-bottom: 25px;
-  color: #eeeff1;
+  color: #eef1f8;
   background-color: #000000;
   text-align: center;
 }
@@ -71,7 +71,7 @@ body {
 
 .index-info {
   background-color: #000000;
-  color: #eeeff1;
+  color: #eef1f8;
   letter-spacing: 0.05em;
   font-size: 1.5em;
   padding-top: 10px;
@@ -159,16 +159,16 @@ input {
 }
 
 .container .box-container .box h3 {
-  color: #444;
+  color: #000000;
   font-size: 22px;
   padding: 10px 0;
 }
 .container .box-container .box h5 {
-  color: #333;
+  color: #000000;
 }
 
 .container .box-container .box p {
-  color: #777;
+  color: #000000;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -177,7 +177,7 @@ input {
   margin-top: 10px;
   display: inline-block;
   background: #00ab5b;
-  color: #fff;
+  color: #eef1f8;
   font-size: 17px;
   border-radius: 5px;
   padding: 8px 25px;
@@ -274,12 +274,6 @@ input {
   top: -50%;
   animation: spin 5s infinite linear;
 }
-@keyframes spin {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .service-1 img {
   position: relative;
   width: 93.5%;
@@ -288,6 +282,11 @@ input {
   left: 3.2%;
   border-radius: 0.5rem;
   padding-bottom: 2px;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 /*Ends servicios*/
@@ -337,7 +336,7 @@ input {
 
 .boss-box {
   padding: 16px;
-  background: #39624f;
+  background: #418a68;
   border-radius: 15px;
   transition: all 0.38s ease;
 }
@@ -354,6 +353,11 @@ input {
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
+.boss-box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
 .icons i {
   display: inline-block;
   color: #eeeff1;
@@ -363,21 +367,6 @@ input {
 }
 .icons i:hover {
   transform: scale(1.2);
-}
-.boss-box:hover {
-  transform: translateY(-10px);
-  cursor: pointer;
-}
-
-@media (max-width: 1240px) {
-  .team {
-    width: 100%;
-    height: auto;
-    padding: 90px 2%;
-  }
-  .center h1 {
-    font-size: 3.2rem;
-  }
 }
 
 /*Ends nosotros*/
@@ -415,7 +404,7 @@ input {
 }
 .left h2 {
   color: #eeeff1;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 48px;
 }
 .left h2 span {
@@ -437,9 +426,6 @@ input {
   top: 40%;
   color: #fff;
 }
-.form-control {
-  border: 2px solid #000;
-}
 .right button {
   border: none;
   border-radius: 0;
@@ -452,40 +438,12 @@ input {
   margin-top: 20px;
   cursor: pointer;
 }
+.form-control {
+  border: 2px solid #000;
+}
+
 .right button:hover {
   background-color: #252525;
-}
-
-/*responsive*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .right i {
-    top: -52px;
-    transform: rotate(90deg);
-    left: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  .left {
-    padding: 90px 15px;
-    text-align: center;
-  }
-  .left h2 {
-    font-size: 25px;
-  }
-  .right {
-    padding: 25px;
-  }
-  .right i {
-    top: -52px;
-    transform: rotate(90deg);
-    left: 46%;
-  }
-  .right button {
-    width: 150px;
-    padding: 12px 0;
-  }
 }
 
 /*Ends contacto*/
@@ -558,6 +516,51 @@ input {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media (min-width: 500px) and (max-width: 767.98px) {
+  .index-title {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  .index-title {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 399.98px) {
+  .index-title {
+    font-size: 0.4em;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 645px) {
+  .index-info {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .index-info {
+    font-size: 1em;
+    text-align: start;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .index-info {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .seasson h2 {
+    font-size: 1.8em;
+  }
+}
+
 @media (min-width: 1001px) and (max-width: 1200px) {
   .featured-products img {
     width: 300px;
@@ -611,6 +614,235 @@ input {
   }
 }
 
+/* Breakpoint servicios*/
+
+@media (min-width: 992px) and (max-width: 1372px) {
+  .info-service {
+    height: 40%;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 0%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .info-service {
+    height: 40%;
+    width: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .info-service {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+  .info-service {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .info-service h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 4.5em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1372px) {
+  .info-service h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 802px) {
+  .info-service h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .info-service h1 {
+    text-align: center;
+    font-size: 2.6em;
+    padding-bottom: 5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 347px) {
+  .info-service h1 {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1372px) {
+  .info-service p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .info-service p {
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .info-service p {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .info-service p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .info-service ul {
+    padding-bottom: 10%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1372px) {
+  .info-service ul li {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .info-service ul li {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .stack-1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .stack-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .service-1 {
+    height: 30rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 575.98px) {
+  .service-1 {
+    margin-right: 0%;
+    height: 25rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 449.98px) {
+  .service-1 {
+    margin-right: 0%;
+    height: 20rem;
+    width: 15rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .service-1 {
+    margin-right: 0%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1372px) {
+  .service-1::before {
+    left: -40%;
+    top: -50%;
+  }
+}
+
+/* Breakpoint nosotros*/
+
+@media (max-width: 1240px) {
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+  .center h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Breakpoint contacto*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .row.single-form {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .left {
+    border-top-right-radius: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .left {
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+
 /* Breackpoint footer image*/
 
 @media (width > 1200px) {
@@ -644,8 +876,6 @@ input {
     width: 50%;
   }
 }
-
-/* Breackpoint footer info*/
 
 @media (min-width: 320px) and (max-width: 767px) {
   .nosotros {

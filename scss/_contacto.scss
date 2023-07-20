@@ -1,45 +1,78 @@
+/* Start contacto*/
 .contact-title {
-  padding: 25px 30px;
-  margin: 10px 0;
+  padding: 50px 50px;
   color: $whiteC;
-  background-color: $tertiaryColor;
+  background-color: $blackC;
   text-align: center;
-}
-
-.contact-info {
-  background-color: $whiteC;
-  padding: 25px 30px;
-  margin: 10px 0;
-}
-
-.contact-info2 {
-  background-color: $whiteC;
-  padding: 25px 30px;
-  margin: 10px 0;
-}
-
-.form {
-  width: 50%;
-  background-color: $tertiaryColor;
-  padding: 30px;
-  border-radius: 6px;
-  margin-left: 30px;
-  label {
-    display: block;
-  }
-  input {
-    margin-bottom: 5px;
+  h1 {
+    display: inline-block;
+    font-size: $textXl;
+    border-bottom: $mainColor solid;
   }
 }
 
-.simbols {
-  div {
-    padding: 15px;
-    margin-left: 30px;
-  }
-  img {
-    width: 100px;
-    padding: 15px;
-    margin-left: -15px;
+.form-area {
+  padding-top: 7%;
+}
+
+.row.single-form {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #00ab5b;
+  padding: 200px 98px;
+  h2 {
+    color: $whiteC;
+    font-weight: 500;
+    font-size: 48px;
+    span {
+      font-weight: 100;
+    }
   }
 }
+
+.single-form {
+  background-color: #fff;
+}
+
+.right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 70px 100px;
+  position: relative;
+  i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+  }
+  button {
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+.form-control {
+  border: 2px solid #000;
+}
+
+.right button:hover {
+  background-color: #252525;
+}
+/* Ends contacto*/

@@ -37,6 +37,38 @@
   }
 }
 
+.index-title {
+  @media (min-width: 500px) and (max-width: 767.98px) {
+    font-size: 0.8em;
+  }
+  @media (min-width: 400px) and (max-width: 499.98px) {
+    font-size: 0.6em;
+  }
+  @media (min-width: 320px) and (max-width: 399.98px) {
+    font-size: 0.4em;
+  }
+}
+
+.index-info {
+  @media (min-width: 400px) and (max-width: 645px) {
+    font-size: 1.2em;
+  }
+  @media (min-width: 320px) and (max-width: 400px) {
+    font-size: 1em;
+    text-align: start;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .seasson h2 {
+    font-size: 1.8em;
+  }
+}
+
 .featured-prodcuts img {
   @media (min-width: 1001px) and (max-width: 1200px) {
     width: 300px;
@@ -83,7 +115,177 @@
   }
 }
 
-/* Breakpoint footer image*/
+/* Breakpoint servicios*/
+
+.info-service {
+  @media (min-width: 992px) and (max-width: 1372px) {
+    height: 40%;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 0%;
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    height: 40%;
+    width: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  @media (min-width: 320px) and (max-width: 350px) {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    h1 {
+      text-align: center;
+      padding-left: 0;
+      font-size: 4.5em;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1372px) {
+    h1 {
+      font-size: 4em;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 802px) {
+    h1 {
+      font-size: $textXl;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      padding-bottom: 5%;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 347px) {
+    h1 {
+      font-size: 2.3em;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1372px) {
+    p {
+      font-size: 1.1em;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    p {
+      font-size: 1.6em;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 450px) {
+    p {
+      font-size: $textMd;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    ul li {
+      font-size: $textMd;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 450px) {
+    ul li {
+      font-size: $textMd;
+    }
+  }
+}
+
+.stack-1 {
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $blackC;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.service-1 {
+  @media (min-width: 576px) and (max-width: 768px) {
+    height: 30rem;
+    word-wrap: 20rem;
+  }
+  @media (min-width: 450px) and (max-width: 575.98px) {
+    margin-right: 0%;
+    height: 25rem;
+    width: 20rem;
+  }
+  @media (min-width: 320px) and (max-width: 449.98px) {
+    margin-right: 0%;
+  }
+  @media (min-width: 992px) and (max-width: 1372px) {
+    ::before {
+      left: -40%;
+      top: -50%;
+    }
+  }
+}
+/* Breakpoint nosotros*/
+
+@media (max-width: 1240px) {
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+  .center h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Breakpoint contacto*/
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .row.single-form {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .left {
+    border-top-right-radius: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+  .left {
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
+
+/* Breakpoint footer*/
 
 @media (width > 1200px) {
   footer img {
@@ -107,5 +309,35 @@ footer img {
   }
   @include responsive(sm) {
     width: 50%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .ayuda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-title {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-info {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1004px) {
+  .links {
+    font-size: 0.8em;
   }
 }
