@@ -344,6 +344,11 @@ us-title {
     width: 450px;
   }
 }
+@media (min-width: 320px) and (max-width: 500px) {
+  .featured-prodcuts img {
+    width: 300px;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .featured-products {
