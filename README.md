@@ -1,5 +1,5 @@
 # Joaquin-zamora-55445
-# Pre-entrega3-Zamora
+# ProyectoFinal-Zamora
 Link repositorio:[link](https://github.com/joacode35/ProyectoFinal-Zamora.git)
 Link deployment: [link](https://joacode35.github.io/ProyectoFinal-Zamora/)
 Link Hosting: [link](https://fitnessar.netlify.app/)
