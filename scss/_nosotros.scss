@@ -45,7 +45,13 @@
   background: #418a68;
   border-radius: 15px;
   transition: all 0.38s ease;
-  h5 {
+  h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  h3 {
     font-size: 15px;
     font-weight: 600;
     color: $whiteC;

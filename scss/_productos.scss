@@ -9,6 +9,7 @@
 }
 
 input {
+  width: 30rem;
   padding: 5px;
   border-radius: 6px;
 }
@@ -42,18 +43,24 @@ input {
     img {
       height: 14rem;
     }
-    h3 {
+    h2 {
       color: $blackC;
       font-size: 22px;
       padding: 10px 0;
     }
-    h5 {
+    h3 {
       color: $blackC;
     }
     p {
       color: $blackC;
       font-size: 15px;
       line-height: 1.8;
+    }
+    .old-price {
+      text-decoration: line-through;
+    }
+    .new-price {
+      color: $mainColor;
     }
     .btn {
       margin-top: 10px;
@@ -67,7 +74,7 @@ input {
     .btn:hover {
       letter-spacing: 1px;
     }
-    .box:hover {
+    :hover {
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
       transform: scale(1.03);
     }

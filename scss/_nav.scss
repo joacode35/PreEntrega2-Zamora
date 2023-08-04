@@ -3,17 +3,19 @@
   padding: 4px 0;
   text-align: center;
   color: $whiteC;
+  font-size: $textMd;
 }
 
 .navegacion {
   background-color: $blackC;
   img {
     width: 250px;
-    a {
-      font-size: $textMd;
-      a:hover {
-        color: $tertiaryColor;
-      }
+  }
+  a {
+    font-size: $textMd;
+    color: $whiteC;
+    :hover {
+      color: $tertiaryColor;
     }
   }
 }

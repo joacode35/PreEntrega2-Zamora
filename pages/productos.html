@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness-ar - Productos</title>
+    <title>Fitness-ar - Productos 50% off en suplementos</title>
+    <meta
+      name="description"
+      content="Nuestra lista de productos revisada por profesionales en el mundo fitness para asegurar el compromiso de calidad con el cliente"
+    />
+    <meta
+      name="keywords"
+      content="Productos, Descuentos, Whey protein, Barra dominadas, Mancuerna, Core bag, Apertura, Press de banca "
+    />
+    <meta name="author" content="Joaquin Zamora" />
+
+    <meta name="copyright" content="Fitness ar group 2023©" />
     <link
       rel="shortcut icon"
       href="../img/iconos/favicon/favicon.ico"
@@ -24,7 +35,7 @@
     />
     <!-- Link BS Icons-->
 
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <!-- Link CSS Local-->
   </head>
   <body>
@@ -32,7 +43,10 @@
     <nav class="navbar navbar-expand-lg navegacion">
       <div class="container-fluid">
         <a class="ps-4 navbar-brand padding-image" href="../index.html">
-          <img src="../img/iconos/nav/navlogo.png" alt="" />
+          <img
+            src="../img/iconos/nav/navlogo.png"
+            alt="Logo de fitness ar tu tienda saludable"
+          />
         </a>
         <div class="d-flex justify-content-center align-items-center">
           <button
@@ -63,7 +77,9 @@
             <li>
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <i class="ps-4 bi bi-bag-heart cart-shop"></i>
+            <a href="../error404.html">
+              <i class="ps-4 bi bi-bag-heart cart-shop"></i>
+            </a>
           </ul>
         </section>
       </div>
@@ -72,11 +88,13 @@
     <main>
       <section class="search-box">
         <input type="text" placeholder="Buscar" />
-        <article class="button-search">
-          <button class="btn btn-light" type="button">
-            <i class="bi bi-search"></i>
-          </button>
-        </article>
+        <a href="../error404.html">
+          <article class="button-search">
+            <button class="btn btn-light" type="button">
+              <i class="bi bi-search"></i>
+            </button>
+          </article>
+        </a>
       </section>
       <div class="container">
         <h1 class="heading">Nuestros productos</h1>
@@ -84,10 +102,13 @@
           <div class="box">
             <img
               src="../img/productos/Suplementos/whey protein.webp"
-              alt="proteina-1"
+              alt="proteina whey protein ENA sport true made sabor vanilla ice cream en pote 930g "
             />
-            <h3>Whey protein</h3>
-            <h5>15.000</h5>
+            <h2>Whey protein</h2>
+            <h3 class="descuento">
+              <span class="old-price">15.000</span>
+              <span class="new-price">12.999</span>
+            </h3>
             <p>El mejor suplemento para tus post-entreno</p>
             <a href="#" class="btn">Comprar</a>
           </div>
@@ -95,10 +116,10 @@
           <div class="box">
             <img
               src="../img/productos/Complementos/barra-dominadas.webp"
-              alt="barra-dominadas"
+              alt="barra dedominadas con anclaje a pared que soporta hasta 140kg"
             />
-            <h3>Barra de dominadas</h3>
-            <h5>20.000</h5>
+            <h2>Barra de dominadas</h2>
+            <h3>20.000</h3>
             <p>Hecho con materiales de alta calidad para destrezas</p>
             <a href="#" class="btn">Comprar</a>
           </div>
@@ -106,10 +127,10 @@
           <div class="box">
             <img
               src="../img/productos/Maquinas de ejercicio/mancuerna.webp"
-              alt="mancuernas"
+              alt="mancuernas pre ajustables a tu peso con soporte de 2 a 15kg"
             />
-            <h3>Mancuerna</h3>
-            <h5>5000</h5>
+            <h2>Mancuerna</h2>
+            <h3>5000</h3>
             <p>
               Una sola unidad <br />
               Consultar peso
@@ -119,20 +140,20 @@
           <div class="box">
             <img
               src="../img/productos/Complementos/core-bag.webp"
-              alt="core-bag"
+              alt="core bag para hacer crossfit o funcional, añadiendo una carga externa"
             />
-            <h3>Core bag</h3>
-            <h5>8000</h5>
+            <h2>Core bag</h2>
+            <h3>8000</h3>
             <p>Bolsa de 10kg ideal para hacer cossfit y core</p>
             <a href="#" class="btn">Comprar</a>
           </div>
           <div class="box">
             <img
               src="../img/productos/Maquinas de ejercicio/maquina apertura.webp"
-              alt="maquina-apertura"
+              alt="maquina apertura para trabajar la parte externa e interna de los pectorales"
             />
-            <h3>Apertura</h3>
-            <h5>45.000</h5>
+            <h2>Apertura</h2>
+            <h3>45.000</h3>
             <p>
               Maquina de apertura <br />
               Consultar envio
@@ -142,11 +163,11 @@
           <div class="box">
             <img
               src="../img/productos/Maquinas de ejercicio/press-de-banca.webp"
-              alt="press-de-banca"
+              alt="press de banca para activar los musculos del pecho, sobre todo el musculo pectoral mayor"
             />
-            <h3>Press de banca</h3>
-            <h5>40.000</h5>
-            <p>Materiales de calidad acompañados de discos entre 5 a 50kg</p>
+            <h2>Press de banca</h2>
+            <h3>40.000</h3>
+            <p>Materiales de calidad acompañados de discos</p>
             <a href="#" class="btn">Comprar</a>
           </div>
         </div>
@@ -158,23 +179,26 @@
         <article
           class="d-flex justify-content-center align-items-center col-xs-12 col-md-4 col-lg-4"
         >
-          <img src="../img/iconos/footer/footer.png" alt="footer-img" />
+          <img
+            src="../img/iconos/footer/footer.png"
+            alt="Logo secundario fitness ar"
+          />
         </article>
         <article class="p-0 col-xs-12 col-sm-6 col-md-4 col-lg-3 nosotros">
           <ul class="ps-0">
             <p class="h5 mb-3 footer-title">Nosotros</p>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Terminos y condiciones</a
               >
             </li>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Preguntas frecuentes</a
               >
             </li>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Politica de devoluciones</a
               >
             </li>
@@ -184,17 +208,17 @@
           <ul class="ps-0">
             <p class="h5 mb-3 footer-title">Ayuda</p>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Politica de privacidad</a
               >
             </li>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Generar un reclamo</a
               >
             </li>
             <li class="mb-3 footer-info list-unstyled">
-              <a href="#" class="text-white text-decoration-none"
+              <a href="../error404.html" class="text-white text-decoration-none"
                 >Politica de cookies</a
               >
             </li>
@@ -204,16 +228,16 @@
           <ul class="ps-0">
             <p class="h5 mb-3 footer-title">Seguinos</p>
             <li class="links list-unstyled">
-              <a href="#">
+              <a href="https://www.facebook.com/" target="_blank">
                 <i class="bi bi-facebook"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/" target="_blank">
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://ar.pinterest.com/" target="_blank">
                 <i class="bi bi-pinterest"></i>
               </a>
-              <a href="#">
+              <a href="https://www.whatsapp.com/" target="_blank">
                 <i class="bi bi-whatsapp"></i>
               </a>
             </li>

@@ -27,9 +27,6 @@
 /* Breakpoint index*/
 
 .header-index {
-  @media (max-width: 768px) {
-    padding: 30px;
-  }
   @media (min-width: 320px) and (max-width: 767.98px) {
     padding: 0;
     margin: 0;
@@ -69,12 +66,12 @@
   }
 }
 
-.featured-prodcuts img {
+.featured-products img {
   @media (min-width: 1001px) and (max-width: 1200px) {
     width: 300px;
   }
   @media (min-width: 767px) and (max-width: 1000px) {
-    width: 250px;
+    width: 230px;
   }
   @media (min-width: 500px) and (max-width: 767px) {
     width: 450px;
@@ -125,8 +122,9 @@
     padding-right: 0%;
   }
   @media (min-width: 576px) and (max-width: 991.98px) {
-    height: 40%;
-    width: 40%;
+    font-size: 1.5em;
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -137,33 +135,34 @@
   @media (min-width: 320px) and (max-width: 350px) {
     padding-left: 0%;
     padding-right: 0%;
+    padding-bottom: 10%;
   }
   @media (min-width: 576px) and (max-width: 991.98px) {
-    h1 {
+    h2 {
       text-align: center;
       padding-left: 0;
       font-size: 4.5em;
     }
   }
   @media (min-width: 992px) and (max-width: 1372px) {
-    h1 {
+    h2 {
       font-size: 4em;
     }
   }
   @media (min-width: 576px) and (max-width: 802px) {
-    h1 {
+    h2 {
       font-size: $textXl;
     }
   }
   @media (min-width: 320px) and (max-width: 575.98px) {
-    h1 {
+    h2 {
       text-align: center;
       font-size: 2.6em;
       padding-bottom: 5%;
     }
   }
   @media (min-width: 320px) and (max-width: 347px) {
-    h1 {
+    h2 {
       font-size: 2.3em;
     }
   }
@@ -174,6 +173,13 @@
   }
   @media (min-width: 576px) and (max-width: 991.98px) {
     p {
+      text-align: start;
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    p {
       font-size: 1.6em;
     }
   }
@@ -183,6 +189,11 @@
     }
   }
   @media (min-width: 576px) and (max-width: 991.98px) {
+    ul {
+      padding-bottom: 10%;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1372px) {
     ul li {
       font-size: $textMd;
     }
@@ -199,7 +210,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $blackC;
     padding-top: 8%;
     padding-bottom: 8%;
   }
@@ -210,9 +220,15 @@
 }
 
 .service-1 {
-  @media (min-width: 576px) and (max-width: 768px) {
+  @media (min-width: 991px) and (max-width: 1200px) {
+    margin-right: 0%;
     height: 30rem;
-    word-wrap: 20rem;
+    width: 20rem;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    margin-right: 0%;
+    height: 30rem;
+    width: 20rem;
   }
   @media (min-width: 450px) and (max-width: 575.98px) {
     margin-right: 0%;
@@ -220,6 +236,11 @@
     width: 20rem;
   }
   @media (min-width: 320px) and (max-width: 449.98px) {
+    margin-right: 0%;
+    height: 20rem;
+    width: 15rem;
+  }
+  @media (min-width: 576px) and (max-width: 991.98px) {
     margin-right: 0%;
   }
   @media (min-width: 992px) and (max-width: 1372px) {
@@ -235,7 +256,8 @@
   .team {
     width: 100%;
     height: auto;
-    padding: 90px 2%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .center h1 {
     font-size: 3.2rem;
@@ -285,6 +307,54 @@
   }
 }
 
+.news-info {
+  @include responsive(md) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  @include responsive(sm) {
+    font-size: 1.5em;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    font-size: $textMd;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.news-box {
+  @include responsive(sm) {
+    width: 30rem;
+  }
+  @media (min-width: 320px) and (max-width: 575.98px) {
+    width: 18rem;
+  }
+  input {
+    @include responsive(sm) {
+      width: 19.5rem;
+    }
+    @media (min-width: 320px) and (max-width: 575.98px) {
+      width: 10rem;
+      font-size: $textMd;
+    }
+  }
+  button {
+    @include responsive(sm) {
+      width: 8rem;
+      font-size: 0.7em;
+    }
+    @media (min-width: 320px) and (max-width: 575.98px) {
+      width: 6rem;
+      font-size: 0.7em;
+      text-align: center;
+    }
+  }
+}
+
 /* Breakpoint footer*/
 
 @media (width > 1200px) {
@@ -298,16 +368,16 @@ footer img {
     width: 200px;
   }
   @include responsive(md) {
-    width: 200px;
+    width: 150px;
   }
   @include responsive(sm) {
     width: 40%;
     padding-bottom: 30px;
   }
-  @include responsive(sm) {
+  @media (min-width: 320px) and (max-width: 576px) {
     padding-bottom: 30px;
   }
-  @include responsive(sm) {
+  @media (min-width: 320px) and (max-width: 576px) {
     width: 50%;
   }
 }
@@ -326,18 +396,102 @@ footer img {
     align-items: center;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .footer-title {
-    text-align: center;
+.social {
+  @media (min-width: 768px) and (max-width: 991px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+.footer-title {
+  @media (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 15%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .footer-info {
     text-align: center;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1004px) {
   .links {
     font-size: 0.8em;
+  }
+}
+
+/* Breakpoint erorr-404*/
+
+.box-404 {
+  @media (min-width: 991px) and (max-width: 1230px) {
+    h1 {
+      font-size: $textLg;
+      padding-left: 5%;
+    }
+    h2 {
+      font-size: $textLg;
+      padding-right: 5%;
+    }
+    img {
+      padding-right: 12%;
+    }
+  }
+  @include responsive(md) {
+    h1 {
+      font-size: 1.5em;
+      padding-left: 5%;
+    }
+    h2 {
+      font-size: 1.5em;
+      padding-right: 5%;
+    }
+    img {
+      padding-right: 12%;
+      width: 30rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 500px) and (max-width: 767.98px) {
+    h1 {
+      font-size: 1.5em;
+      padding-left: 0%;
+      padding-bottom: 6%;
+    }
+    h2 {
+      font-size: 1.5em;
+      padding-left: 0%;
+      padding-top: 6%;
+    }
+    img {
+      padding: 0%;
+      width: 27rem;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 500px) {
+    h1 {
+      font-size: $textMd;
+    }
+    h2 {
+      font-size: $textMd;
+    }
+    img {
+      width: 15rem;
+    }
   }
 }

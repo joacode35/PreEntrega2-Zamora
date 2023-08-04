@@ -26,7 +26,9 @@
 .left {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background: #00ab5b;
+  background-image: url(../img/contacto/chase-kinney-fmqblyhd2hu-unsplash.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 98px;
   h2 {
     color: $whiteC;
@@ -57,7 +59,7 @@
   button {
     border: none;
     border-radius: 0;
-    background: #252525;
+    background: $mainColor;
     width: 180px;
     color: #fff;
     padding: 15px 0;
@@ -73,6 +75,49 @@
 }
 
 .right button:hover {
-  background-color: #252525;
+  background-color: $mainLite;
 }
+
+.news-info {
+  color: $whiteC;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8%;
+}
+
+.news-box {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px #abdcdf, -5px -5px 25px #abdcdf;
+  background-color: $whiteC;
+  input {
+    width: 28rem;
+    font-size: 18px;
+    color: $blackC;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+  }
+  button {
+    color: $whiteC;
+    padding: 15px 20px;
+    border: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: $mainColor;
+    cursor: pointer;
+    :hover {
+      background-color: $mainLite;
+    }
+  }
+}
+
 /* Ends contacto*/
